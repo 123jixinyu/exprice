@@ -35,7 +35,7 @@
         if(_this.slideIndex>_this.slides.length-1){
           _this.slideIndex=0;
         }
-      },2000);
+      },4000);
     },
     methods:{
       change:function(index){

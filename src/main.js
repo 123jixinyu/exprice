@@ -5,6 +5,7 @@ import Layout from './components/layout'
 import VRouter from 'vue-router'
 
 import IndexPage from './pages/index'
+import ProductPage from './pages/product'
 
 Vue.use(VRouter)
 
@@ -14,6 +15,10 @@ let router=new VRouter({
     {
       'path':'/',
       component:IndexPage
+    },
+    {
+      path:'/product',
+      component:ProductPage
     }
   ]
 })

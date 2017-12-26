@@ -60,6 +60,9 @@
     text-decoration: none;
     color:black;
   }
+  ul{
+    list-style: none;
+  }
   /*  header css  */
   .app-header{
     height:80px;
@@ -130,6 +133,7 @@
     height: 100px;
     width:100%;
     background: darkgrey;
+    margin-top:100px;
   }
   .app-footer p{
     line-height: 100px;

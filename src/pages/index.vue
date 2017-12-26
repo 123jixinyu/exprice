@@ -42,7 +42,7 @@
               <p>
                 {{item.desc}}
               </p>
-              <button>立即购买</button>
+              <button @click="buyClick">立即购买</button>
             </div>
           </div>
           <div v-if="!(index%2)" class="fence"></div>
@@ -173,6 +173,11 @@
             imgSrc:require('../assets/slides/pic4.jpg'),
           }
         ]
+      }
+    },
+    methods:{
+      buyClick:function(){
+        this.$router.push({path:'/product'});
       }
     }
   }
