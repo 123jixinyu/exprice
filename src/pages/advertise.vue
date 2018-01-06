@@ -2,7 +2,7 @@
   <div id="product">
     <div class="product-right">
       <div class="product-desc">
-        <h3>数据统计</h3>
+        <h3>广告投放</h3>
         <p>历史资料、科学实验、检验、统计等所获得的和用于科学研究、技术设计、查证、决策等的数值加以统计为解决方案做前期准备。</p>
         <div class="select">
           <div class="item">
@@ -245,4 +245,4 @@
     color: white;
     font-size: 1.1em;
   }
-  </style>
+</style>

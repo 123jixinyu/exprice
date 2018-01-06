@@ -177,7 +177,7 @@
     },
     methods:{
       buyClick:function(){
-        this.$router.push({path:'/product'});
+        this.$router.push({path:'/detail/product'});
       }
     }
   }

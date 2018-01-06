@@ -1,15 +1,48 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import VRouter from 'vue-router'
 
-Vue.use(Router)
+import IndexPage from '../pages/index'
+import ProductPage from '../pages/product'
+import Forecast from '../pages/forecast'
+import Analysis from '../pages/analysis'
+import Advertise from '../pages/advertise'
+import detailPage from '../pages/detail'
+import orderList from '../pages/order_list'
 
-export default new Router({
+Vue.use(VRouter)
+
+export default new VRouter({
+  mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      'path': '/',
+      component: IndexPage
+    },
+    {
+      path: '/detail',
+      component: detailPage,
+      children: [
+        {
+          path: 'product',
+          component: ProductPage
+        },
+        {
+          path: 'forecast',
+          component: Forecast
+        },
+        {
+          path: 'analysis',
+          component: Analysis
+        },
+        {
+          path: 'advertise',
+          component: Advertise
+        }
+      ]
+    },
+    {
+      path:'/orderList',
+      component:orderList
     }
   ]
 })
