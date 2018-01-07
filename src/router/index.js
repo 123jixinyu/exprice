@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue/dist/vue'
 import VRouter from 'vue-router'
 
 import IndexPage from '../pages/index'
@@ -8,7 +8,7 @@ import Analysis from '../pages/analysis'
 import Advertise from '../pages/advertise'
 import detailPage from '../pages/detail'
 import orderList from '../pages/order_list'
-
+import Boot from '../components/boot'
 Vue.use(VRouter)
 
 export default new VRouter({
@@ -43,6 +43,10 @@ export default new VRouter({
     {
       path:'/orderList',
       component:orderList
+    },
+    {
+      path:'/boot',
+      component:Boot
     }
   ]
 })

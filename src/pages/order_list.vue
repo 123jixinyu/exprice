@@ -97,6 +97,7 @@
 </template>
 
 <script>
+
   import VueDatetimePicker from 'vue-datetime-picker'
 
   export default {
@@ -107,7 +108,7 @@
         end: '2020-10-10',
       }
     },
-    components: {
+    components:{
       VueDatetimePicker
     }
   }

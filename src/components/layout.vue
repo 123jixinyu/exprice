@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <div class="app-header">
       <div class="logo">
         <img src="../assets/logo.png"/>
